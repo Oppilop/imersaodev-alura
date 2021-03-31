@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>
+        Imersão Dev - Aula 07
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo"
+            alt="">
+        <h1 class="page-title">Super Trunfo</h1>
+
+        <button onclick="sortearCarta()" id="btnSortear">Sortear Carta</button>
+
+        <form id="form">
+            <h2>Escolha o seu atributo</h2>
+            <div class="opcoes" id="opcoes"></div>
+            <button type="button" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button>
+        </form>
+        <div id="cartas">
+            <div id="cartaJogador" class="carta">
+               
+                <div id="cartaJogadorImg" class="cartaImg"></div>
+                <h3 id="cartaJogadorNome"></h3>
+                <div id="cartaJogadorAtributo" class="cartaAtributo"></div>
+            </div>
+            <p id="resultado"></p>
+            <div id="cartaMaquina" class="carta">
+                
+                <div id="cartaMaquinaImg" class="cartaImg"></div>
+                <h3 id="cartaMaquinaNome"></h3>
+                <div id="cartaMaquinaAtributo" class="cartaAtributo"></div> 
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
